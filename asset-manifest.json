@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/LiamCollins.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/LiamCollins.github.io/static/js/main.45f14f71.js",
+    "main.js": "/LiamCollins.github.io/static/js/main.742af47e.js",
     "static/js/535.e19b09ad.chunk.js": "/LiamCollins.github.io/static/js/535.e19b09ad.chunk.js",
     "static/media/Linus.png": "/LiamCollins.github.io/static/media/Linus.d79f3448b1597728a905.png",
     "index.html": "/LiamCollins.github.io/index.html",
     "main.f855e6bc.css.map": "/LiamCollins.github.io/static/css/main.f855e6bc.css.map",
-    "main.45f14f71.js.map": "/LiamCollins.github.io/static/js/main.45f14f71.js.map",
+    "main.742af47e.js.map": "/LiamCollins.github.io/static/js/main.742af47e.js.map",
     "535.e19b09ad.chunk.js.map": "/LiamCollins.github.io/static/js/535.e19b09ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.45f14f71.js"
+    "static/js/main.742af47e.js"
   ]
 }
