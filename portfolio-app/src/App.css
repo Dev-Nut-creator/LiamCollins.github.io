@@ -1,8 +1,6 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,9 +9,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,11 +33,176 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-.MainHeader
+body
 {
-  color : red;
+  background-color: grey;
+
 }
 
 
+
+.ProfileSection {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position :relative;
+  bottom :150px;
+}
+.ProfileContainer
+{
+  border-style: solid;
+  border-color: black;
+  border-radius: 150px;
+
+
+  width: 200px;
+  height:200px;
+}
+
+
+.ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.AboutMeSection /*when about me page is opend it will apply these styles*/
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SquareContainer
+{
+
+  --position : relative;
+  --width : 400px;
+  --height : 400px;
+  --left : auto;
+  --right :auto;
+  --top :auto;
+  --bottom: auto;
+
+  position: var(--position);
+  background-color: rgb(97, 97, 100);
+  width: var(--width);
+  height: var(--height);
+  left : var(--left);
+  right : var(--right);
+  top : var(--top);
+  bottom : var(--bottom);
+
+display: block;
+  border-style:solid;
+  border-radius :25px;
+  border-color: rgb(255, 255, 255);
+}
+
+.AboutMeButtonContainer
+{
+  text-align: center;
+  position :relative;
+  bottom :  150px;
+}
+
+.AboutMeButton
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+  font-style :normal; 
+  font-family :'Courier New', Courier, monospace;
+
+
+}
+
+.ProjectGifSection
+{
+  width:100%;
+  height :400px;
+  overflow: hidden;
+  display: flex;
+
+  border-style: solid;
+  border-color: white;
+}
+
+.ProjectGifContainer
+{
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height :100%;
+
+
+
+}
+
+
+.ProjectSection
+{
+  display: grid;
+  grid-template-areas: "stack";
+  gap : 20px;
+}
+
+.ProjectButtonImage
+{
+  width :200px;
+  height :200px;
+}
+.ProjectButtonText
+{
+  bottom:40px;
+
+  font-style :normal; 
+  font-family :'Courier New', Courier, monospace;
+}
+
+
+
+
+
+.NuttyEngineProject
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+
+  right : 200px;
+
+
+}
+
+.NuttyEngineProjectSection
+{
+
+}
+
+
+
+
+.DES315Project
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+
+  left :200px;
+  bottom : 250px;
+
+}
+
+.DES315Section
+{
+}
