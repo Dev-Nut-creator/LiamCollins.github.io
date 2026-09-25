@@ -26,6 +26,7 @@ export function ImageButton({name,func,className,imageClassName,image,alt})
 }
 
 
+
 export function Image({className,resource,altName})
 {
   return <img className={className} src = {resource} alt = {altName}/>;
@@ -53,14 +54,8 @@ export function AboutMe()
 export function NuttyEngine()
 {
   return(
-    <div className='NuttyEngineSection'>
-
-      <section class = 'SquareContainer' style ={{position: 'absolute' ,left: '200px' ,bottom : '200px' }}>
-
-
-      </section>
-
-    </div>
+    <>
+    </>
 
 
   );
@@ -70,17 +65,23 @@ export function NuttyEngine()
 export function DES315()
 {
   return(
-    <div className='DES315Section'>
-        <section className='SquareContainer' style ={{'--position': 'absolute'}} >
-
-
-        </section>
-
-    </div>
+    <>
+    </>
   );
 
 }
 
+export function DownloadCV()
+{
+
+
+}
+
+export function AllProjects()
+{
+
+
+}
 
 
 function App() {
@@ -88,6 +89,9 @@ function App() {
   const [aboutMeOpen, SetAboutMeOpen] = useState(false);
   const [EngineProjectOpen, SetEngineProjectOpen] = useState(false);
   const [DES315ProjectOpen, SetDES315ProjectOpen] = useState(false);
+
+  
+
 
 
   return (
@@ -101,8 +105,19 @@ function App() {
         {/* //render about me page if about me button clicked  */}
         <section className='AboutMeButtonContainer'>
             <Button className =  "AboutMeButton" name = "About Me" func = {() => SetAboutMeOpen(!aboutMeOpen)}/> 
-            {aboutMeOpen && <AboutMe/>}
         </section>
+          {aboutMeOpen && <AboutMe/>}
+
+        <section className = 'NavBarSection'>
+
+            <Button className =  "NavBarButton" name = "Donwload CV" func = {() => DownloadCV()}/> 
+
+            <Button className =  "NavBarButton" name = "AllProjects" func = {() => AllProjects()}/> 
+
+
+
+        </section>
+
 
         <section className='ProjectSection'>
           {/* create buttons that hold a gif to each project and each of their own sections for showing text*/}

@@ -73,31 +73,27 @@ body
 .AboutMeSection /*when about me page is opend it will apply these styles*/
 {
   display: flex;
-  align-items: center;
+
+
   justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  position: relative;
+  bottom: 150px;
 }
 
 .SquareContainer
 {
-
-  --position : relative;
-  --width : 400px;
-  --height : 400px;
-  --left : auto;
-  --right :auto;
-  --top :auto;
-  --bottom: auto;
-
-  position: var(--position);
+  position: relative;
   background-color: rgb(97, 97, 100);
-  width: var(--width);
-  height: var(--height);
-  left : var(--left);
-  right : var(--right);
-  top : var(--top);
-  bottom : var(--bottom);
+  width: 1000px;
+  height: 400px;
 
-display: block;
+  
+  left :var(--left,0px);
+
+  display: flex;
+  z-index: 10;
   border-style:solid;
   border-radius :25px;
   border-color: rgb(255, 255, 255);
@@ -107,7 +103,6 @@ display: block;
 {
   text-align: center;
   position :relative;
-  bottom :  150px;
 }
 
 .AboutMeButton
@@ -118,7 +113,8 @@ display: block;
   border-radius: 25px;
   font-style :normal; 
   font-family :'Courier New', Courier, monospace;
-
+  position :relative;
+  bottom: 150px;
 
 }
 
@@ -146,18 +142,48 @@ display: block;
 
 }
 
+.NavBarSection
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(206, 145, 95);
+  position: relative;
+  bottom: 100px;
+}
+
+.NavBarButton
+{
+  background-color: black;
+  color : rgb(248, 245, 245);
+  cursor: pointer;
+  border-radius: 25px;
+  font-style :normal; 
+  font-family :'Courier New', Courier, monospace;
+  bottom: 150px;
+  width: 100px;
+}
+
+
+
 
 .ProjectSection
 {
   display: grid;
-  grid-template-areas: "stack";
-  gap : 20px;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  background-color: aqua;
+  position: relative;
+  bottom: 50px;
 }
 
 .ProjectButtonImage
 {
-  width :200px;
+  width :500px;
   height :200px;
+  position: relative;
+  object-fit: contain;
 }
 .ProjectButtonText
 {
@@ -178,15 +204,12 @@ display: block;
   cursor: pointer;
   border-radius: 25px;
 
-  right : 200px;
-
-
+  align-items: center;
+  justify-content: center;
+  gap :8px;
 }
 
-.NuttyEngineProjectSection
-{
 
-}
 
 
 
@@ -198,11 +221,5 @@ display: block;
   cursor: pointer;
   border-radius: 25px;
 
-  left :200px;
-  bottom : 250px;
-
 }
 
-.DES315Section
-{
-}
